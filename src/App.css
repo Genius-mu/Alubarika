@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Stack+Sans+Headline:wght@200..700&display=swap");
+
+.card::before {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  inset: 0px;
+  border-radius: inherit;
+  background: radial-gradient(
+    400px 120px at 50% 0%,
+    rgba(141, 141, 141, 0.08),
+    transparent 70%
+  );
+  transition: opacity 0.25s;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
