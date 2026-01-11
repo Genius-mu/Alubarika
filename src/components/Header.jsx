@@ -146,7 +146,7 @@ const Header = () => {
 
   const navItems = [
     { path: "/", icon: Home, label: "Home" },
-    { path: "/service", icon: Settings, label: "Settings" },
+    { path: "/service", icon: Settings, label: "Service" },
     { path: "/info", icon: Info, label: "Info" },
     { path: "/messages", icon: MessageCircle, label: "Messages" },
   ];
