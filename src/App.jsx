@@ -4,6 +4,8 @@ import Header from "./components/Header";
 import Home from "./pages/Home";
 import Services from "./pages/Service";
 import Info from "./pages/Info";
+import Messages from "./pages/Messages";
+import Footer from "./components/Footer";
 // import LandingPage from "./pages/LandingPage";
 
 function App() {
@@ -16,7 +18,9 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/service" element={<Services />} />
             <Route path="/info" element={<Info />} />
+            <Route path="/messages" element={<Messages />} />
           </Routes>
+          <Footer />
         </div>
       </div>
     </>

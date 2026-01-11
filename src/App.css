@@ -1,4 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Stack+Sans+Headline:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Stack+Sans+Headline:wght@200..700&family=Stack+Sans+Notch:wght@200..700&display=swap");
+
+span,
+button,
+h4 {
+  font-family: "Stack Sans Headline", sans-serif;
+}
+
+h1,
+h2,
+p,
+h3 {
+  font-family: "Stack Sans Notch", sans-serif;
+}
+
+p {
+  font-weight: 300;
+}
 
 .card::before {
   content: "";

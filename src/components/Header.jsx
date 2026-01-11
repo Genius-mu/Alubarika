@@ -139,7 +139,7 @@ const Header = () => {
               </span>
             </Link>
             <Link
-              to="/"
+              to="/messages"
               className="text-white py-2 hover:px-5 px-4 group relative hover:bg-white/10 rounded-lg transition-all ease-in-out duration-300"
             >
               <MessageCircle className="w-5 h-5" />
