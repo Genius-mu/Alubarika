@@ -224,6 +224,7 @@ const Messages = () => {
   const formik = useFormik({
     initialValues: {
       message: "",
+      chatName: conversations[selectedChat].name,
     },
     validationSchema: Yup.object({
       message: Yup.string()
@@ -231,33 +232,54 @@ const Messages = () => {
         .required("Message cannot be empty")
         .max(1000, "Message is too long"),
     }),
-    onSubmit: (values, { resetForm }) => {
-      // Get current time
-      const now = new Date();
-      const time = now.toLocaleTimeString("en-US", {
-        hour: "numeric",
-        minute: "2-digit",
-        hour12: true,
-      });
+    onSubmit: async (values, { resetForm, setSubmitting }) => {
+      try {
+        // Get current time
+        const now = new Date();
+        const time = now.toLocaleTimeString("en-US", {
+          hour: "numeric",
+          minute: "2-digit",
+          hour12: true,
+        });
 
-      // Create new message object
-      const newMessage = {
-        id: chatMessages.length + 1,
-        sender: "me",
-        text: values.message.trim(),
-        time: time,
-      };
+        // Create new message object
+        const newMessage = {
+          id: chatMessages.length + 1,
+          sender: "me",
+          text: values.message.trim(),
+          time: time,
+        };
 
-      // Add message to chat
-      setChatMessages([...chatMessages, newMessage]);
+        // Add message to chat
+        setChatMessages([...chatMessages, newMessage]);
 
-      // Send email (this will open the user's email client)
-      const subject = `Message from Chat - ${conversations[selectedChat].name}`;
-      const body = encodeURIComponent(values.message);
-      window.location.href = `mailto:toyyibadegbite9@gmail.com?subject=${subject}&body=${body}`;
+        // Send to Formspree
+        const response = await fetch("https://formspree.io/f/xjggbqzq", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            message: values.message.trim(),
+            chatName: conversations[selectedChat].name,
+            timestamp: new Date().toISOString(),
+          }),
+        });
 
-      // Reset form
-      resetForm();
+        if (response.ok) {
+          console.log("Message sent successfully!");
+          // Reset form
+          resetForm();
+        } else {
+          console.error("Failed to send message");
+          // You might want to show an error message to the user here
+        }
+      } catch (error) {
+        console.error("Error sending message:", error);
+        // You might want to show an error message to the user here
+      } finally {
+        setSubmitting(false);
+      }
     },
   });
 
@@ -292,7 +314,7 @@ const Messages = () => {
         <div className="grid lg:grid-cols-3 gap-6 h-[calc(100vh-10px)] md:h-[calc(100vh-280px)]">
           {/* Conversations List */}
           <div className="lg:col-span-1 bg-gradient-to-br from-[#1a1f2e] to-[#0f1420] rounded-2xl border border-white/10 overflow-hidden flex flex-col">
-            {/* Search part */}
+            {/* Search */}
             <div className="p-4 border-b border-white/10">
               <div className="relative">
                 <Search className="w-5 h-5 absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
@@ -447,7 +469,7 @@ const Messages = () => {
                 </button>
                 <button
                   type="submit"
-                  disabled={!formik.values.message.trim()}
+                  disabled={!formik.values.message.trim() || formik.isSubmitting}
                   className="w-10 h-10 bg-gradient-to-br from-green-500 to-green-900 hover:shadow-lg hover:shadow-green-500/50 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-105 flex-shrink-0 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   <Send className="w-5 h-5 text-white" />
