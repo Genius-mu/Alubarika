@@ -3,7 +3,12 @@ import {
   BarChart3,
   Check,
   DollarSign,
+  Globe,
+  Lock,
+  Star,
   TrendingUp,
+  User,
+  Users,
 } from "lucide-react";
 import React from "react";
 
@@ -15,7 +20,8 @@ const Home = () => {
           {/* <div className="inline-block px-4 py-2 bg-green-500/10 rounded-full border border-green-500/10 shadow-[0_2px_5px_#015f26b1_inset,0_-2px_5px_#000_inset] shadow-[0_2px_5px_#015f26b1_inset,0_-2px_3px_#222_inset] w-fit"> */}
           <div className="inline-block px-4 py-2 border-green-600/30 bg-green-600/10 rounded-full border text-green-500 shadow-xl w-fit">
             <span className="text-sm w-fit pl-4 relative font-semibold">
-              <span className="w-2 h-2 left-0 bottom-1 rounded-2xl absolute bg-yellow-500"></span> Trusted by 100,000+ Traders Worldwide
+              <span className="w-2 h-2 left-0 bottom-1 rounded-2xl absolute bg-yellow-500"></span>{" "}
+              Trusted by 10,000+ Traders Worldwide
             </span>
           </div>
 
@@ -124,9 +130,9 @@ const Home = () => {
             ].map((service, index) => (
               <div
                 key={service.title}
-                className="group relative bg-gradient-to-br from-[#1a1f2e] via-[#0f1420] to-[#090b14] p-8 rounded-2xl border border-white/10 hover:border-blue-500/50 transition-all duration-500 hover:shadow-2xl card hover:shadow-blue-500/10 hover:-translate-y-2"
+                className="group relative bg-gradient-to-br from-[#1a1f2e] via-[#0f1420] to-[#090b14] p-8 rounded-2xl border border-white/10 hover:border-green-500/50 transition-all duration-500 hover:shadow-2xl card hover:shadow-green-500/10 hover:-translate-y-2"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-purple-500/0 group-hover:from-blue-500/5 group-hover:to-purple-500/5 rounded-2xl transition-all duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-purple-500/0 group-hover:from-green-500/5 group-hover:to-green-500/5 rounded-2xl transition-all duration-500"></div>
 
                 <div className="relative z-10">
                   <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-900 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
@@ -154,6 +160,95 @@ const Home = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="about" className="py-32 relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-1 gap-16 items-center">
+            <div className="flex flex-col gap-y-3">
+              <h2 className="text-5xl font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+                Why Choose Us?
+              </h2>
+              <p className="text-white/90 text-[15px] leading-relaxed">
+                With over a decade of experience in forex and crypto markets, we
+                provide reliable trading solutions tailored to your needs. Our
+                platform combines cutting-edge technology with expert market
+                knowledge.
+              </p>
+              <p className="text-white/90 text-[15px] leading-relaxed">
+                Join thousands of successful traders who trust TradeMaster for
+                security, speed, and success in every trade.
+              </p>
+
+              <div className="flex items-center gap-4 mb-8">
+                <div className="flex -space-x-2">
+                  {[
+                    { icon: User },
+                    { icon: User },
+                    { icon: User },
+                    { icon: User },
+                  ].map((us, i) => (
+                    <div
+                      key={i}
+                      className="w-10 h-10 rounded-full bg-gradient-to-b from-green-500 to-green-900 border-2 border-[#0a0e1a] flex justify-center items-center"
+                    >
+                      <us.icon className="w-5 h-5 text-white" />
+                    </div>
+                  ))}
+                </div>
+                <div>
+                  <div className="flex gap-1 mb-1">
+                    {[1, 2, 3, 4, 5].map((i) => (
+                      <Star
+                        key={i}
+                        className="w-4 h-4 fill-yellow-400 text-yellow-400"
+                      />
+                    ))}
+                  </div>
+                  <div className="text-[13px] text-gray-400">
+                    4.9/5 from 1,200+ reviews
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 gap-6">
+              {[
+                {
+                  icon: Globe,
+                  title: "Global Access",
+                  desc: "Trade from anywhere",
+                },
+                {
+                  icon: Lock,
+                  title: "Bank-Level Security",
+                  desc: "Your funds are safe",
+                },
+                {
+                  icon: Users,
+                  title: "Expert Team",
+                  desc: "24/7 dedicated support",
+                },
+                {
+                  icon: TrendingUp,
+                  title: "Proven Results",
+                  desc: "Track record of success",
+                },
+              ].map((item) => (
+                <div
+                  key={item.title}
+                  className="bg-gradient-to-br from-[#1a1f2e] to-[#0f1420] p-6 rounded-2xl border border-white/10 hover:border-blue-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 group"
+                >
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <item.icon className="w-6 h-6 text-blue-400" />
+                  </div>
+                  <h4 className="font-bold text-white mb-1">{item.title}</h4>
+                  <p className="text-sm text-gray-400">{item.desc}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
