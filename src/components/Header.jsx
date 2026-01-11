@@ -121,7 +121,7 @@ const Header = () => {
               </span>
             </Link>
             <Link
-              to="/"
+              to="/service"
               className="text-white py-2 hover:px-5 px-4 group relative hover:bg-white/10 rounded-lg transition-all ease-in-out duration-300"
             >
               <Settings className="w-5 h-5" />
@@ -130,7 +130,7 @@ const Header = () => {
               </span>
             </Link>
             <Link
-              to="/"
+              to="/info"
               className="text-white py-2 hover:px-5 px-4 group relative hover:bg-white/10 rounded-lg transition-all ease-in-out duration-300"
             >
               <Info className="w-5 h-5" />

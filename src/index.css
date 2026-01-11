@@ -16,10 +16,10 @@ p {
   width: 7px;
 }
 ::-webkit-scrollbar-thumb {
-  /* background: rgb(1, 252, 1); */
   /* border: 1.5px solid hsl(120, 99%, 10%); */
-  background: #080c18;
-  border: 1.5px solid rgb(1, 252, 1);
+  /* background: #080c18; */
+  /* border: 1.5px solid rgb(1, 252, 1); */
   /* box-shadow: 0 0 4px hsl(120, 99%, 30%) inset; */
-  /* border-radius: 10px; */
+  border-radius: 10px;
+  background: rgb(1, 252, 1);
 }

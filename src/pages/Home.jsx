@@ -10,6 +10,7 @@ import {
   User,
   Users,
 } from "lucide-react";
+import { motion } from "framer-motion";
 import React from "react";
 
 const Home = () => {
@@ -19,39 +20,51 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col gap-y-3 lg:px-8 relative z-10">
           {/* <div className="inline-block px-4 py-2 bg-green-500/10 rounded-full border border-green-500/10 shadow-[0_2px_5px_#015f26b1_inset,0_-2px_5px_#000_inset] shadow-[0_2px_5px_#015f26b1_inset,0_-2px_3px_#222_inset] w-fit"> */}
           <div className="inline-block px-4 py-2 border-green-600/30 bg-green-600/10 rounded-full border text-green-500 shadow-xl w-fit">
-            <span className="text-sm w-fit pl-4 relative font-semibold">
+            <span className="text-[13px] sm:text-sm w-fit pl-4 relative font-semibold">
               <span className="w-2 h-2 left-0 bottom-1 rounded-2xl absolute bg-yellow-500"></span>{" "}
               Trusted by 10,000+ Traders Worldwide
             </span>
           </div>
 
-          <h1 className="text-3xl md:text-4xl font-bold leading-tight">
+          <motion.h1
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: false, amount: 0.3 }}
+            className="text-2xl md:text-4xl font-bold leading-tight"
+          >
             <span className="bg-gradient-to-b from-white via-white to-gray-900 bg-clip-text text-transparent text-shadow-2xs">
               Master{" "}
-              <span className="bg-gradient-to-b from-orange-300 via-orange-400 to-orange-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-b from-blue-300 via-blue-400 to-blue-600 bg-clip-text text-transparent">
                 Forex & Crypto
               </span>{" "}
               Trading
             </span>
-          </h1>
+          </motion.h1>
 
-          <p className="text-xl font-mono md:text-[15px] max-w-[600px] text-white/90 leading-relaxed">
+          <motion.p
+            initial={{ opacity: 0, y: -30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: false, amount: 0.3 }}
+            className="text-[13px] sm:text-xl font-mono md:text-[15px] max-w-[600px] text-white/90 leading-relaxed"
+          >
             Expert strategies, real-time insights, and institutional-grade
             trading solutions for your financial success.
-          </p>
+          </motion.p>
 
           <div className="flex flex-col sm:flex-row gap-4 items-center">
-            <button className="group bg-gradient-to-r from-green-600 to-green-900 text-white px-10 py-4 rounded-xl font-semibold hover:shadow-2xl hover:shadow-green-600/50 transition-all duration-300 hover:scale-105 flex items-center gap-2">
+            <button className="group bg-gradient-to-r from-green-600 to-green-900 text-white px-10 sm:py-4 py-3 w-full sm:w-fit rounded-xl font-semibold hover:shadow-2xl hover:shadow-green-600/50 transition-all duration-300 hover:scale-105 flex items-center gap-2">
               Start Trading Now
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
-            <button className="bg-white/5 backdrop-blur-sm border border-white/10 text-white px-10 py-4 rounded-xl font-semibold hover:bg-white/10 transition-all duration-300 hover:scale-105">
+            <button className="bg-white/5 backdrop-blur-sm border border-white/10 text-white px-10 sm:py-4 py-3 w-full sm:w-fit rounded-xl font-semibold hover:bg-white/10 transition-all duration-300 hover:scale-105">
               Watch Demo
             </button>
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-5 mt-20 w-full mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-20 w-full mx-auto">
             {[
               { value: "$2.5B+", label: "Trading Volume" },
               { value: "150+", label: "Countries" },
@@ -71,7 +84,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section id="services" className="py-32 relative">
+      <section id="services" className="py-15 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-10 flex flex-col gap-y-2">
             <h2 className="text-2xl md:text-4xl font-bold">
@@ -164,20 +177,20 @@ const Home = () => {
         </div>
       </section>
 
-      <section id="about" className="py-32 relative">
+      <section id="about" className="py-20 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-1 gap-16 items-center">
             <div className="flex flex-col gap-y-3">
-              <h2 className="text-5xl font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+              <h2 className="text-3xl sm:text-5xl font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
                 Why Choose Us?
               </h2>
-              <p className="text-white/90 text-[15px] leading-relaxed">
+              <p className="text-white/90 text-[12px] sm:text-[15px] leading-relaxed">
                 With over a decade of experience in forex and crypto markets, we
                 provide reliable trading solutions tailored to your needs. Our
                 platform combines cutting-edge technology with expert market
                 knowledge.
               </p>
-              <p className="text-white/90 text-[15px] leading-relaxed">
+              <p className="text-white/90 text-[12px] sm:text-[15px] leading-relaxed">
                 Join thousands of successful traders who trust TradeMaster for
                 security, speed, and success in every trade.
               </p>
@@ -214,7 +227,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 {
                   icon: Globe,
