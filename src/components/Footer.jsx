@@ -190,10 +190,10 @@ const Footer = () => {
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-green-400 flex-shrink-0" />
                 <a
-                  href="mailto:support@trademaster.com"
+                  href="mailto:toyyibadegbite@gmail.com"
                   className="text-[15px] text-white/70 hover:text-green-400 transition-colors"
                 >
-                  support@trademaster.com
+                  support@Alubarika.com
                 </a>
               </li>
             </ul>
@@ -227,7 +227,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-white/60">
-              © {currentYear} TradeMaster. All rights reserved.
+              © {currentYear} Alubarika. All rights reserved.
             </p>
             <div className="flex flex-wrap gap-6">
               {[
