@@ -292,7 +292,7 @@ const Messages = () => {
         <div className="grid lg:grid-cols-3 gap-6 h-[calc(100vh-10px)] md:h-[calc(100vh-280px)]">
           {/* Conversations List */}
           <div className="lg:col-span-1 bg-gradient-to-br from-[#1a1f2e] to-[#0f1420] rounded-2xl border border-white/10 overflow-hidden flex flex-col">
-            {/* Search */}
+            {/* Search part */}
             <div className="p-4 border-b border-white/10">
               <div className="relative">
                 <Search className="w-5 h-5 absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
