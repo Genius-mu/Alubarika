@@ -385,7 +385,7 @@ const Video = ({ className }) => (
 //                 <button className="w-10 h-10 bg-white/5 hover:bg-white/10 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-105 flex-shrink-0">
 //                   <Smile className="w-5 h-5 text-gray-400" />
 //                 </button>
-//                 <a href="mailto:toyyibadegbite@gmail.com" className="w-10 h-10 bg-gradient-to-br from-green-500 to-green-900 hover:shadow-lg hover:shadow-green-500/50 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-105 flex-shrink-0">
+//                 <a href="mailto:toyyibadegbite9@gmail.com" className="w-10 h-10 bg-gradient-to-br from-green-500 to-green-900 hover:shadow-lg hover:shadow-green-500/50 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-105 flex-shrink-0">
 //                   <Send className="w-5 h-5 text-white" />
 //                 </a>
 //               </div>
@@ -405,7 +405,6 @@ const Video = ({ className }) => (
 import React, { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-
 
 const Messages = () => {
   const [selectedChat, setSelectedChat] = useState(0);
@@ -530,7 +529,7 @@ const Messages = () => {
       // Send email (this will open the user's email client)
       const subject = `Message from Chat - ${conversations[selectedChat].name}`;
       const body = encodeURIComponent(values.message);
-      window.location.href = `mailto:toyyibadegbite@gmail.com?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:toyyibadegbite9@gmail.com?subject=${subject}&body=${body}`;
 
       // Reset form
       resetForm();
