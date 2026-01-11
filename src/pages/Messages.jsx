@@ -240,7 +240,7 @@ const Messages = () => {
         </div>
 
         {/* Messages Container */}
-        <div className="grid lg:grid-cols-3 gap-6 h-[calc(100vh-280px)]">
+        <div className="grid lg:grid-cols-3 gap-6 h-[calc(100vh-10px)] md:h-[calc(100vh-280px)]">
           {/* Conversations List */}
           <div className="lg:col-span-1 bg-gradient-to-br from-[#1a1f2e] to-[#0f1420] rounded-2xl border border-white/10 overflow-hidden flex flex-col">
             {/* Search */}

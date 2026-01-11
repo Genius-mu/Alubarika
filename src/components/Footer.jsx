@@ -91,11 +91,11 @@ const Footer = () => {
     <footer className="bg-gradient-to-b from-[#0a0e1a] to-[#070b16] border-t border-white/5">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {/* Company Info */}
           <div className="space-y-4">
             <h3 className="text-2xl font-bold bg-gradient-to-r from-green-300 via-green-400 to-green-600 bg-clip-text text-transparent">
-              TradeMaster
+              Alubarika
             </h3>
             <p className="text-[15px] text-white/70 leading-relaxed">
               Empowering traders worldwide with professional-grade tools and
@@ -175,11 +175,7 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
                 <span className="text-[15px] text-white/70 leading-relaxed">
-                  123 Trading Street,
-                  <br />
-                  Financial District,
-                  <br />
-                  New York, NY 10004
+                  123 Trading Street, Financial District, New York, NY 10004
                 </span>
               </li>
               <li className="flex items-center gap-3">
