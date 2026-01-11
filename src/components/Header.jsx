@@ -103,6 +103,7 @@
 // export default Header;
 
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Home = ({ className }) => (
   <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -234,16 +235,16 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex justify-center items-center gap-1">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.path}
-                href={item.path}
+                to={item.path}
                 className="text-white py-2 hover:px-5 px-4 group relative hover:bg-white/10 rounded-lg transition-all ease-in-out duration-300"
               >
                 <item.icon className="w-5 h-5" />
                 <span className="absolute -bottom-12 left-1/2 -translate-x-1/2 px-3 py-1 bg-zinc-800 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
                   {item.label}
                 </span>
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -287,15 +288,15 @@ const Header = () => {
         {/* Side Menu Navigation */}
         <nav className="p-4 space-y-2">
           {navItems.map((item) => (
-            <a
+            <Link
               key={item.path}
-              href={item.path}
+              to={item.path}
               onClick={() => setIsSideMenuOpen(false)}
               className="flex items-center gap-4 text-white py-3 px-4 hover:bg-white/10 rounded-lg transition-all duration-300 group"
             >
               <item.icon className="w-5 h-5 text-green-400" />
               <span className="text-[15px]">{item.label}</span>
-            </a>
+            </Link>
           ))}
         </nav>
 

@@ -220,25 +220,25 @@ const Info = () => {
                   Our Story
                 </span>
               </h2>
-              <p className="text-white/80 text-[13px] sm:text-[15px] leading-relaxed">
-                Founded in 2015 by a group of experienced traders and fintech
-                innovators, TradeMaster was born from a simple vision: to make
-                professional-grade trading tools accessible to everyone,
-                regardless of their experience level or capital.
+              <p className="text-white/90 text-[15px] leading-relaxed">
+                I'm Alubarika, a passionate forex and cryptocurrency trader with
+                years of experience navigating the dynamic world of financial
+                markets. My journey began with a deep curiosity about market
+                trends and a commitment to mastering the art of trading.
               </p>
-              <p className="text-white/80 text-[13px] sm:text-[15px] leading-relaxed">
-                What started as a small platform with just 500 users has grown
-                into a global community of over 100,000+ traders across 150+
-                countries. Today, we facilitate billions in trading volume
-                annually while maintaining our commitment to security,
-                transparency, and innovation.
+              <p className="text-white/90 text-[15px] leading-relaxed">
+                Over the years, I've developed proven strategies in both forex
+                and crypto markets, learning to read patterns, manage risk, and
+                capitalize on opportunities. Through dedication and continuous
+                learning, I've built a track record of successful trades across
+                major currency pairs and leading cryptocurrencies.
               </p>
-              <p className="text-white/80 text-[13px] sm:text-[15px] leading-relaxed">
-                Our journey has been marked by continuous improvement, listening
-                to our users, and staying ahead of market trends. We've evolved
-                from a simple forex platform to a comprehensive trading
-                ecosystem that includes cryptocurrencies, advanced analytics,
-                and AI-powered tools.
+              <p className="text-white/90 text-[15px] leading-relaxed">
+                Today, I share my expertise through trading signals, market
+                analysis, and personalized guidance to help others navigate
+                these markets with confidence. Whether you're interested in
+                forex trading, crypto investing, or both, I'm here to provide
+                the insights and support you need to succeed.
               </p>
             </div>
 
@@ -272,15 +272,13 @@ const Info = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-900 rounded-xl flex items-center justify-center mb-6">
                 <Target className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-3xl font-bold mb-4 text-white">
-                Our Mission
-              </h3>
-              <p className="text-white/80 text-[13px] sm:text-[15px] leading-relaxed">
-                To empower individuals worldwide with the tools, knowledge, and
-                confidence to achieve financial freedom through intelligent
-                trading. We believe everyone deserves access to
-                professional-grade trading infrastructure, regardless of their
-                background or starting capital.
+              <h3 className="text-3xl font-bold mb-4 text-white">My Mission</h3>
+              <p className="text-white/90 text-[15px] leading-relaxed">
+                To help aspiring traders navigate the forex and crypto markets
+                with confidence through proven strategies, clear guidance, and
+                honest insights. I'm committed to sharing my knowledge and
+                experience to empower others to make informed trading decisions
+                and achieve their financial goals.
               </p>
             </div>
 
@@ -288,13 +286,13 @@ const Info = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-900 rounded-xl flex items-center justify-center mb-6">
                 <Lightbulb className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-3xl font-bold mb-4 text-white">Our Vision</h3>
-              <p className="text-white/80 text-[13px] sm:text-[15px] leading-relaxed">
-                To become the world's most trusted and innovative trading
-                platform, setting new standards for security, transparency, and
-                user experience. We envision a future where global markets are
-                accessible to all, powered by cutting-edge technology and guided
-                by ethical practices.
+              <h3 className="text-3xl font-bold mb-4 text-white">My Vision</h3>
+              <p className="text-white/90 text-[15px] leading-relaxed">
+                To build a community of successful traders who benefit from my
+                expertise in both forex and cryptocurrency markets. I envision
+                creating a space where traders can learn, grow, and profit
+                together through transparent analysis, real-time signals, and
+                continuous market education.
               </p>
             </div>
           </div>
@@ -307,11 +305,11 @@ const Info = () => {
           <div className="text-center mb-12 flex flex-col gap-y-2">
             <h2 className="text-2xl md:text-4xl font-bold">
               <span className="bg-gradient-to-b from-white via-white to-gray-700 bg-clip-text text-transparent">
-                Our Core Values
+                My Core Values
               </span>
             </h2>
-            <p className="text-[15px] text-white/80 max-w-2xl mx-auto">
-              The principles that guide everything we do
+            <p className="text-[15px] text-white/90 max-w-2xl mx-auto">
+              The principles that guide my trading and mentorship
             </p>
           </div>
 
@@ -319,33 +317,33 @@ const Info = () => {
             {[
               {
                 icon: Shield,
-                title: "Security First",
-                desc: "Your funds and data are protected with military-grade encryption and multi-layer security protocols.",
+                title: "Integrity",
+                desc: "I provide honest market analysis and realistic expectations. No false promises, just genuine insights based on real trading experience.",
               },
               {
                 icon: Heart,
-                title: "User-Centric",
-                desc: "Every feature we build starts with understanding your needs and solving real trading challenges.",
+                title: "Dedication",
+                desc: "Committed to helping you succeed. I'm passionate about sharing knowledge and supporting traders at every stage of their journey.",
               },
               {
                 icon: TrendingUp,
-                title: "Innovation",
-                desc: "We continuously push boundaries with AI, machine learning, and cutting-edge trading technology.",
+                title: "Continuous Learning",
+                desc: "Markets evolve, and so do I. I stay updated with the latest trends, strategies, and tools in forex and crypto trading.",
               },
               {
                 icon: Globe,
                 title: "Transparency",
-                desc: "Clear pricing, honest communication, and complete visibility into all aspects of our platform.",
+                desc: "Clear communication about wins, losses, and strategies. I share real results and honest insights from my trading experience.",
               },
               {
                 icon: Users,
                 title: "Community",
-                desc: "Building a supportive network where traders learn, grow, and succeed together.",
+                desc: "Building a supportive network where traders learn from each other, share experiences, and grow together.",
               },
               {
                 icon: Award,
                 title: "Excellence",
-                desc: "Uncompromising commitment to quality, reliability, and superior customer service.",
+                desc: "Striving for precision in every trade and analysis. I deliver quality signals and actionable insights you can trust.",
               },
             ].map((value, i) => (
               <div
@@ -373,45 +371,45 @@ const Info = () => {
           <div className="text-center mb-12 flex flex-col gap-y-2">
             <h2 className="text-2xl md:text-4xl font-bold">
               <span className="bg-gradient-to-b from-white via-white to-gray-700 bg-clip-text text-transparent">
-                Our Journey
+                My Trading Journey
               </span>
             </h2>
-            <p className="text-[15px] text-white/80 max-w-2xl mx-auto">
-              Key milestones that shaped TradeMaster
+            <p className="text-[15px] text-white/90 max-w-2xl mx-auto">
+              Key milestones that shaped my trading career
             </p>
           </div>
 
           <div className="space-y-8">
             {[
               {
-                year: "2015",
-                title: "Platform Launch",
-                desc: "TradeMaster goes live with forex trading for 500 initial users.",
-              },
-              {
-                year: "2017",
-                title: "Crypto Integration",
-                desc: "Added cryptocurrency trading, becoming one of the first platforms to offer both forex and crypto.",
+                year: "2018",
+                title: "Started Trading Journey",
+                desc: "Began learning forex trading fundamentals, studying market analysis and developing my first trading strategies.",
               },
               {
                 year: "2019",
-                title: "Mobile Revolution",
-                desc: "Launched award-winning mobile apps for iOS and Android with full trading capabilities.",
+                title: "First Consistent Profits",
+                desc: "Achieved consistent profitability in forex trading after months of practice, discipline, and continuous learning.",
+              },
+              {
+                year: "2020",
+                title: "Entered Crypto Markets",
+                desc: "Expanded into cryptocurrency trading, applying technical analysis skills to Bitcoin, Ethereum, and altcoins.",
               },
               {
                 year: "2021",
-                title: "AI Trading Tools",
-                desc: "Introduced AI-powered market analysis and automated trading strategies.",
+                title: "Developed Trading System",
+                desc: "Created my own proven trading system combining technical indicators, price action, and risk management.",
               },
               {
                 year: "2023",
-                title: "Global Expansion",
-                desc: "Reached 100,000+ active traders across 150+ countries worldwide.",
+                title: "Started Sharing Signals",
+                desc: "Began providing trading signals and market analysis to help other traders benefit from my experience.",
               },
               {
                 year: "2025",
-                title: "Next Generation",
-                desc: "Launched advanced copy trading network and institutional-grade analytics platform.",
+                title: "Building Community",
+                desc: "Launched this platform to share knowledge, provide mentorship, and build a community of successful traders.",
               },
             ].map((milestone, i) => (
               <div key={i} className="flex gap-6 group">
@@ -447,12 +445,11 @@ const Info = () => {
             <div className="text-center mb-12">
               <h2 className="text-2xl md:text-4xl font-bold mb-4">
                 <span className="bg-gradient-to-b from-white via-white to-gray-700 bg-clip-text text-transparent">
-                  Trusted by Traders Worldwide
+                  Trusted by Fellow Traders
                 </span>
               </h2>
-              <p className="text-[13px] sm:text-[15px] text-white/80">
-                Join thousands who have chosen TradeMaster for their trading
-                journey
+              <p className="text-[15px] text-white/90">
+                Real results from traders who follow my signals and strategies
               </p>
             </div>
 
@@ -463,30 +460,30 @@ const Info = () => {
                     <Star key={i} className="w-6 h-6 text-yellow-400" />
                   ))}
                 </div>
-                <div className="text-2xl font-bold text-white mb-1">4.9/5</div>
-                <div className="text-sm text-gray-400">Average Rating</div>
+                <div className="text-2xl font-bold text-white mb-1">4.8/5</div>
+                <div className="text-sm text-gray-400">Community Rating</div>
                 <div className="text-xs text-gray-500 mt-1">
-                  From 12,000+ reviews
+                  From 500+ traders
                 </div>
               </div>
 
               <div className="text-center">
                 <div className="text-4xl font-bold bg-gradient-to-b from-green-500 to-green-900 bg-clip-text text-transparent mb-2">
-                  99.9%
+                  75%+
                 </div>
-                <div className="text-sm text-gray-400">Platform Uptime</div>
+                <div className="text-sm text-gray-400">Win Rate</div>
                 <div className="text-xs text-gray-500 mt-1">
-                  Industry-leading reliability
+                  Average signal accuracy
                 </div>
               </div>
 
               <div className="text-center">
                 <div className="text-4xl font-bold bg-gradient-to-b from-green-500 to-green-900 bg-clip-text text-transparent mb-2">
-                  24/7
+                  Daily
                 </div>
-                <div className="text-sm text-gray-400">Customer Support</div>
+                <div className="text-sm text-gray-400">Market Updates</div>
                 <div className="text-xs text-gray-500 mt-1">
-                  Always here to help
+                  Analysis & signals
                 </div>
               </div>
             </div>
@@ -499,36 +496,37 @@ const Info = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="bg-gradient-to-b from-white via-white to-gray-700 bg-clip-text text-transparent">
-              Ready to Join Us?
+              Ready to Start Trading?
             </span>
           </h2>
-          <p className="text-[15px] text-white/80 mb-10 max-w-2xl mx-auto">
-            Become part of a community that's redefining what's possible in
-            online trading. Your journey to financial success starts here.
+          <p className="text-[15px] text-white/90 mb-10 max-w-2xl mx-auto">
+            Join my community of traders and get access to daily signals, market
+            analysis, and personalized guidance. Let's navigate the markets
+            together.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="group bg-gradient-to-r from-green-600 to-green-900 text-white px-10 py-4 rounded-xl w-full sm:w-fit font-semibold hover:shadow-2xl hover:shadow-green-600/50 transition-all duration-300 hover:scale-105 flex items-center gap-2">
-              Start Trading Today
+            <button className="group bg-gradient-to-r from-green-600 to-green-900 text-white px-10 py-4 rounded-xl w-full sm:w-fit font-semibold hover:shadow-2xl hover:shadow-green-600/50 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2">
+              Get Trading Signals
               <ArrowRight />
             </button>
             <button className="bg-white/5 backdrop-blur-sm border border-white/10 text-white px-10 py-4 rounded-xl w-full sm:w-fit font-semibold hover:bg-white/10 transition-all duration-300 hover:scale-105">
-              Learn More
+              Contact Me
             </button>
           </div>
 
-          <div className="mt-12 flex items-center justify-center gap-8 text-[11px] sm:text-sm text-gray-400">
+          <div className="mt-12 flex flex-wrap items-center justify-center gap-6 sm:gap-8 text-sm text-gray-400">
             <div className="flex items-center gap-2">
               <Check className="w-4 h-4 text-green-400" />
-              Free Account
+              Daily Signals
             </div>
             <div className="flex items-center gap-2">
               <Check className="w-4 h-4 text-green-400" />
-              No Hidden Fees
+              Market Analysis
             </div>
             <div className="flex items-center gap-2">
               <Check className="w-4 h-4 text-green-400" />
-              Instant Access
+              Direct Support
             </div>
           </div>
         </div>

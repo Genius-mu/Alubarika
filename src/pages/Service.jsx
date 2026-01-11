@@ -285,23 +285,23 @@ const Services = () => {
           <div className="inline-block px-4 py-2 border-green-600/30 bg-green-600/10 rounded-full border text-green-500 shadow-xl w-fit">
             <span className="text-sm w-fit pl-4 relative font-semibold">
               <span className="w-2 h-2 left-0 bottom-1 rounded-2xl absolute bg-yellow-500"></span>{" "}
-              Comprehensive Trading Solutions
+              Professional Trading Services
             </span>
           </div>
 
           <h1 className="text-4xl md:text-5xl font-bold leading-tight max-w-3xl">
             <span className="bg-gradient-to-b from-white via-white to-gray-900 bg-clip-text text-transparent">
-              Everything You Need to{" "}
+              What I Offer to{" "}
               <span className="bg-gradient-to-b from-green-300 via-green-400 to-green-600 bg-clip-text text-transparent">
-                Succeed in Trading
+                Help You Succeed
               </span>
             </span>
           </h1>
 
           <p className="text-[15px] max-w-[700px] text-white/90 leading-relaxed">
-            From beginner-friendly platforms to advanced analytical tools, we
-            provide a complete ecosystem designed to help you trade smarter,
-            faster, and more profitably across forex and crypto markets.
+            From trading signals to market education, I provide everything you
+            need to navigate forex and crypto markets with confidence and
+            profitability.
           </p>
         </div>
       </section>
@@ -312,12 +312,12 @@ const Services = () => {
           <div className="text-center mb-12 flex flex-col gap-y-2">
             <h2 className="text-2xl md:text-4xl font-bold">
               <span className="bg-gradient-to-b from-white via-white to-gray-700 bg-clip-text text-transparent">
-                Core Trading Services
+                My Trading Services
               </span>
             </h2>
             <p className="text-[15px] text-white/90 max-w-2xl mx-auto">
-              Professional-grade tools and platforms built for traders of all
-              levels
+              Proven strategies and personalized support for your trading
+              journey
             </p>
           </div>
 
@@ -325,74 +325,74 @@ const Services = () => {
             {[
               {
                 icon: TrendingUp,
-                title: "Forex Trading Platform",
-                desc: "Access the world's largest financial market with institutional-grade infrastructure and ultra-low latency execution.",
+                title: "Forex Trading Signals",
+                desc: "Receive daily forex signals with clear entry/exit points, stop loss, and take profit levels for major and exotic currency pairs.",
                 features: [
-                  "50+ Major & Exotic Currency Pairs",
-                  "Spreads from 0.0 Pips",
-                  "Leverage up to 1:500",
-                  "Advanced Charting Tools",
-                  "One-Click Trading",
+                  "Daily Signal Alerts",
+                  "Major & Exotic Pairs",
+                  "Risk Management Guidance",
+                  "Real-Time Market Updates",
+                  "Entry & Exit Strategies",
                 ],
               },
               {
                 icon: DollarSign,
-                title: "Cryptocurrency Exchange",
-                desc: "Trade top digital assets on our secure, high-performance crypto platform with deep liquidity and competitive fees.",
+                title: "Crypto Trading Signals",
+                desc: "Get timely cryptocurrency trading signals covering Bitcoin, Ethereum, and top altcoins with detailed analysis.",
                 features: [
-                  "200+ Crypto Assets Available",
-                  "Spot & Futures Trading",
-                  "Cold Wallet Security",
-                  "Staking & Yield Programs",
-                  "24/7 Market Access",
+                  "BTC, ETH & Altcoin Signals",
+                  "Spot & Futures Setups",
+                  "Market Trend Analysis",
+                  "Risk-Reward Ratios",
+                  "24/7 Market Monitoring",
                 ],
               },
               {
                 icon: BarChart,
-                title: "AI Market Analysis",
-                desc: "Harness the power of artificial intelligence to identify opportunities and make data-driven trading decisions.",
+                title: "Market Analysis",
+                desc: "In-depth technical and fundamental analysis to help you understand market movements and make informed decisions.",
                 features: [
-                  "Real-Time AI Predictions",
-                  "Sentiment Analysis",
-                  "Pattern Recognition",
-                  "Risk Assessment Tools",
-                  "Custom Alert System",
+                  "Daily Market Breakdowns",
+                  "Technical Chart Analysis",
+                  "News Impact Reports",
+                  "Trend Predictions",
+                  "Support/Resistance Levels",
                 ],
               },
               {
                 icon: LineChart,
-                title: "Advanced Charting Suite",
-                desc: "Professional technical analysis tools with 100+ indicators, drawing tools, and customizable layouts.",
+                title: "Trading Education",
+                desc: "Learn proven trading strategies, risk management, and technical analysis through personalized guidance and resources.",
                 features: [
-                  "100+ Technical Indicators",
-                  "Multi-Timeframe Analysis",
-                  "Custom Strategy Builder",
-                  "Chart Pattern Scanner",
-                  "Save & Share Templates",
+                  "Chart Reading Tutorials",
+                  "Strategy Development",
+                  "Risk Management Tips",
+                  "Trading Psychology",
+                  "One-on-One Mentorship",
                 ],
               },
               {
                 icon: Smartphone,
-                title: "Mobile Trading App",
-                desc: "Trade on the go with our award-winning mobile app, featuring full platform functionality in your pocket.",
+                title: "VIP Signal Group",
+                desc: "Join my exclusive VIP community for premium signals, priority support, and direct access to my trading insights.",
                 features: [
-                  "iOS & Android Support",
-                  "Biometric Login",
-                  "Push Notifications",
-                  "Full Chart Suite",
-                  "Instant Deposits",
+                  "Premium Signal Access",
+                  "Private Group Chat",
+                  "Direct Support from Me",
+                  "Weekly Market Outlook",
+                  "Trade Performance Reviews",
                 ],
               },
               {
                 icon: Target,
-                title: "Copy Trading Network",
-                desc: "Follow and automatically copy trades from experienced traders or become a strategy provider yourself.",
+                title: "Portfolio Guidance",
+                desc: "Get personalized advice on portfolio management, position sizing, and diversification strategies for both forex and crypto.",
                 features: [
-                  "1000+ Expert Traders",
-                  "Transparent Statistics",
-                  "Risk Management Controls",
-                  "Real-Time Sync",
-                  "Earn as Strategy Provider",
+                  "Portfolio Reviews",
+                  "Position Sizing Help",
+                  "Diversification Strategy",
+                  "Risk Assessment",
+                  "Performance Tracking",
                 ],
               },
             ].map((service, index) => (
@@ -438,11 +438,11 @@ const Services = () => {
           <div className="text-center mb-12 flex flex-col gap-y-2">
             <h2 className="text-2xl md:text-4xl font-bold">
               <span className="bg-gradient-to-b from-white via-white to-gray-700 bg-clip-text text-transparent">
-                Support & Education
+                Additional Benefits
               </span>
             </h2>
             <p className="text-[15px] text-white/90 max-w-2xl mx-auto">
-              Comprehensive resources to help you grow as a trader
+              Extra value I provide to help you succeed
             </p>
           </div>
 
@@ -450,38 +450,38 @@ const Services = () => {
             {[
               {
                 icon: BookOpen,
-                title: "Trading Academy",
-                desc: "Free courses from basics to advanced strategies",
+                title: "Free Resources",
+                desc: "Access free trading guides and tutorials",
               },
               {
                 icon: Headphones,
-                title: "24/7 Support",
-                desc: "Expert assistance whenever you need it",
+                title: "Direct Support",
+                desc: "Get answers to your questions quickly",
               },
               {
                 icon: Users,
                 title: "Community Access",
-                desc: "Join 10,000+ traders in our forums",
+                desc: "Network with fellow traders",
               },
               {
                 icon: Zap,
-                title: "Demo Account",
-                desc: "Practice with $100,000 virtual funds",
+                title: "Quick Execution",
+                desc: "Signals delivered in real-time",
               },
               {
                 icon: Award,
-                title: "Webinars & Events",
-                desc: "Live sessions with market experts",
+                title: "Proven Track Record",
+                desc: "Years of successful trading experience",
               },
               {
                 icon: Shield,
-                title: "Account Protection",
-                desc: "Negative balance protection included",
+                title: "Transparent Results",
+                desc: "Honest reporting of wins and losses",
               },
             ].map((item, i) => (
               <div
                 key={i}
-                className="bg-gradient-to-br from-[#1a1f2e] to-[#0f1420] p-6 rounded-2xl border border-white/10 hover:border-blue-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 group hover:-translate-y-1"
+                className="bg-gradient-to-br from-[#1a1f2e] to-[#0f1420] p-6 rounded-2xl border border-white/10 hover:border-green-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-green-500/10 group hover:-translate-y-1"
               >
                 <div className="w-12 h-12 bg-gradient-to-br from-green-500/20 to-green-900/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <item.icon className="w-6 h-6 text-green-400" />
@@ -502,24 +502,24 @@ const Services = () => {
           <div className="text-center mb-12 flex flex-col gap-y-2">
             <h2 className="text-2xl md:text-4xl font-bold">
               <span className="bg-gradient-to-b from-white via-white to-gray-700 bg-clip-text text-transparent">
-                Why Choose Our Platform
+                Why Trade With Me
               </span>
             </h2>
             <p className="text-[15px] text-white/90 max-w-2xl mx-auto">
-              Industry-leading features that set us apart
+              What sets my service apart
             </p>
           </div>
 
           <div className="grid md:grid-cols-4 gap-6">
             {[
-              { icon: Clock, value: "0.01s", label: "Avg Execution Time" },
-              { icon: Lock, value: "256-bit", label: "SSL Encryption" },
-              { icon: Globe, value: "150+", label: "Countries Supported" },
-              { icon: Shield, value: "$5M", label: "Insurance Coverage" },
+              { icon: Clock, value: "5+ Years", label: "Trading Experience" },
+              { icon: TrendingUp, value: "75%+", label: "Win Rate" },
+              { icon: Users, value: "500+", label: "Happy Traders" },
+              { icon: Shield, value: "100%", label: "Transparency" },
             ].map((stat, i) => (
               <div
                 key={i}
-                className="card text-center py-8 hover:-translate-y-2 rounded-2xl border border-white/5 hover:border-white/10 transition-all ease-in-out duration-300 flex justify-center items-center flex-col bg-[#070b16]"
+                className="text-center py-8 hover:-translate-y-2 rounded-2xl border border-white/5 hover:border-white/10 transition-all ease-in-out duration-300 flex justify-center items-center flex-col bg-[#070b16]"
               >
                 <div className="w-14 h-14 bg-gradient-to-br from-green-500 to-green-900 rounded-xl flex items-center justify-center mb-4 mx-auto">
                   <stat.icon className="w-7 h-7 text-white" />
@@ -543,34 +543,33 @@ const Services = () => {
             </span>
           </h2>
           <p className="text-[15px] text-white/90 mb-10 max-w-2xl mx-auto">
-            Join thousands of successful traders and experience the difference
-            of a professional trading platform. Open your account in minutes.
+            Join my trading community and get access to daily signals, market
+            analysis, and personalized support. Let's achieve your trading goals
+            together.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="group bg-gradient-to-r hover:px-12 from-green-600 to-green-900 text-white w-full sm:w-fit px-10 py-4 rounded-xl font-semibold hover:shadow-2xl hover:shadow-green-600/50 transition-all duration-300 hover:scale-105 flex items-center gap-2">
-              Open Free Account
-              <span className="overflow-hidden overflow-y-hidden">
-                <ArrowRight />
-              </span>
+            <button className="group bg-gradient-to-r from-green-600 to-green-900 text-white w-full sm:w-fit px-10 py-4 rounded-xl font-semibold hover:shadow-2xl hover:shadow-green-600/50 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2">
+              Get Trading Signals
+              <ArrowRight />
             </button>
             <button className="bg-white/5 backdrop-blur-sm border border-white/10 text-white px-10 py-4 rounded-xl w-full sm:w-fit font-semibold hover:bg-white/10 transition-all duration-300 hover:scale-105">
-              Try Demo Account
+              Contact Me
             </button>
           </div>
 
-          <div className="mt-12 flex flex-col sm:flex-row sm:items-center justify-center gap-8 text-sm text-gray-400">
+          <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8 text-sm text-gray-400">
             <div className="flex items-center gap-2">
               <Check className="w-4 h-4 text-green-400" />
-              No Credit Card Required
+              Daily Signals
             </div>
             <div className="flex items-center gap-2">
               <Check className="w-4 h-4 text-green-400" />
-              Setup in 2 Minutes
+              Personal Support
             </div>
             <div className="flex items-center gap-2">
               <Check className="w-4 h-4 text-green-400" />
-              $0 Minimum Deposit
+              Proven Strategies
             </div>
           </div>
         </div>
