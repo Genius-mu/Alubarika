@@ -15,7 +15,8 @@ const Send = ({ className }) => (
     <path
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={2}g
+      strokeWidth={2}
+      g
       d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
     />
   </svg>
@@ -643,7 +644,7 @@ const Messages = () => {
               <WhatsApp className="w-5 h-5 text-white" />
             </Link>
             <Link
-              to="/"
+              to="https://www.instagram.com/alubarika775/"
               target="_blank"
               alt="Instagram Page"
               className="bg-gradient-to-b from-red-500 to-red-900 p-2 rounded-full hover:scale-120 transition duration-300 ease-in-out"
