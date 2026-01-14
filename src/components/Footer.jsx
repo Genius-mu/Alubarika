@@ -249,16 +249,21 @@ const Footer = () => {
           <div className="mt-6 pt-6 border-t border-white/5">
             <p className="text-xs text-white/50 leading-relaxed text-center">
               <strong className="text-white/70">Risk Warning:</strong> Trading
-              foreign exchange and cryptocurrencies on margin carries a high
-              level of risk and may not be suitable for all investors. The high
-              degree of leverage can work against you as well as for you. Before
-              deciding to trade, you should carefully consider your investment
-              objectives, level of experience, and risk appetite. There is a
-              possibility that you may sustain a loss of some or all of your
-              initial investment. You should not invest money that you cannot
-              afford to lose. You should be aware of all the risks associated
-              with trading and seek advice from an independent financial
-              advisor.
+              forex and crypto on margin carries{" "}
+              <span className="text-green-500 font-semibold">high risk</span>{" "}
+              and may not suit all investors. Leverage can work{" "}
+              <span className="text-green-500 font-semibold">against you</span>{" "}
+              as well as for you. Consider your{" "}
+              <span className="text-green-500 font-semibold">
+                investment goals, experience, and risk tolerance
+              </span>{" "}
+              before trading. You may lose{" "}
+              <span className="text-green-500 font-semibold">some or all</span>{" "}
+              of your investment. Never invest money you{" "}
+              <span className="text-green-500 font-semibold">
+                cannot afford to lose
+              </span>
+              . Seek advice from an independent financial advisor.
             </p>
           </div>
         </div>
