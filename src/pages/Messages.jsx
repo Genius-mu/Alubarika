@@ -16,7 +16,6 @@ const Send = ({ className }) => (
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
-      g
       d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
     />
   </svg>
@@ -464,7 +463,7 @@ const Messages = () => {
             variants={itemVariants}
             className={`${
               !showChatList ? "block" : "hidden"
-            } lg:block lg:col-span-2 bg-gradient-to-br from-[#1a1f2e] to-[#0f1420] rounded-xl sm:rounded-2xl border border-white/10 overflow-hidden flex flex-col`}
+            } lg:block lg:col-span-2 bg-gradient-to-br from-[#1a1f2e] to-[#0f1420] rounded-xl sm:rounded-2xl border border-white/10 overflow-x-hidden flex flex-col`}
           >
             {/* Email Input Section */}
             <div className="p-3 sm:p-4 border-b border-white/10 bg-[#0a0e1a]/50">
@@ -538,7 +537,7 @@ const Messages = () => {
             </div>
 
             {/* Messages */}
-            <div className="flex-1 overflow-y-auto p-3 sm:p-4 md:p-6 space-y-3 sm:space-y-4">
+            <div className="flex-1 overflow-y-auto overflow-x-hidden p-3 sm:p-4 md:p-6 space-y-3 sm:space-y-4 min-h-0">
               {chatMessages.map((msg, index) => (
                 <motion.div
                   key={msg.id}
@@ -569,7 +568,7 @@ const Messages = () => {
             </div>
 
             {/* Message Input */}
-            <div className="p-3 sm:p-4 border-t border-white/10">
+            <div className="p-3 sm:p-4 border-t border-white/10 sticky bottom-0 bg-[#0f1420]">
               <div className="flex items-end gap-1.5 sm:gap-2">
                 <button
                   type="button"
