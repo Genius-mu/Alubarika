@@ -254,7 +254,7 @@ const Messages = () => {
         setChatMessages([...chatMessages, newMessage]);
 
         // Send to Formspree
-        const response = await fetch("https://formspree.io/f/xjggbqzq", {
+        const response = await fetch("https://formspree.io/f/xaqqyrzg", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -469,7 +469,9 @@ const Messages = () => {
                 </button>
                 <button
                   type="submit"
-                  disabled={!formik.values.message.trim() || formik.isSubmitting}
+                  disabled={
+                    !formik.values.message.trim() || formik.isSubmitting
+                  }
                   className="w-10 h-10 bg-gradient-to-br from-green-500 to-green-900 hover:shadow-lg hover:shadow-green-500/50 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-105 flex-shrink-0 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   <Send className="w-5 h-5 text-white" />
